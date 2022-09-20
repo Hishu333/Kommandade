@@ -1,0 +1,18 @@
+{% sw_extends '@Storefront/storefront/layout/header/header-minimal.html.twig' %}
+
+{% block layout_header_minimal_logo %}
+    <div class="col-12 col-sm-6 header-minimal-logo">
+        {% sw_include '@Storefront/storefront/layout/header/logo.html.twig' %}
+    </div>
+{% endblock %}
+
+{% block layout_header_minimal_button %}
+    <div class="col-12 col-sm-6 justify header-minimal-back-to-shop">
+        <a href="{{ path('frontend.home.page') }}"
+            class="header-minimal-back-to-shop-button"
+            title="{{ "checkout.finishButtonBackToShop"|trans|striptags }}">
+            {% sw_include '@Storefront/icons/double-arrow-left-dark.svg' ignore missing %}
+            {{ "checkout.finishButtonBackToShop"|trans|striptags }}
+        </a>
+    </div>
+{% endblock %}

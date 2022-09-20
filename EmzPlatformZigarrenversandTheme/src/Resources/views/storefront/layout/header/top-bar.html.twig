@@ -1,0 +1,24 @@
+{% sw_extends '@Storefront/storefront/layout/header/top-bar.html.twig' %}
+
+{% block layout_header_top_bar %}
+  <div class="emz-top-bar-wrapper">
+    <div class="top-bar container">
+    <nav class="top-bar-nav emz-top-bar justify-content-between align-items-center">
+            <span class="emz-top-bar-item">{% sw_icon 'delivery' style { 'pack': 'EmzIcons'} %}<a href="#" class ="top-bar-text">Versandkostenfrei ab 50 CHF</a></span>
+            <span class="emz-top-bar-item">{% sw_icon 'trending' style { 'pack': 'EmzIcons'} %}<a href="#" class ="top-bar-text">Action</a></span>
+            <span class="emz-top-bar-item">{% sw_icon 'info' style { 'pack': 'EmzIcons'} %}<a href="#" class ="top-bar-text">Über uns</a></span>
+            <span class="emz-top-bar-item">{% sw_icon 'new' style { 'pack': 'EmzIcons'} %}<a href="#" class ="top-bar-text">Neue Produkte</a></span>
+            <span class="emz-top-bar-item">{% sw_icon 'phone' style { 'pack': 'EmzIcons' } %}<a href="#" class ="top-bar-text">Hotline 052. 624 26 00</a></span>
+            <span class="emz-top-bar-item">{% sw_icon 'service' style { 'pack': 'EmzIcons'} %}<a href="#" class ="top-bar-text">Service/Hilfe</a></span>
+                  {% block layout_header_top_bar_language %}
+                  {% endblock %}
+
+                  {% block layout_header_top_bar_currency %}
+                  {% endblock %}
+
+                  {% block layout_header_top_bar_service %}
+                  {% endblock %}
+            </nav>
+            </div>
+        </div>      
+{% endblock %}

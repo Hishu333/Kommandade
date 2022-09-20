@@ -1,0 +1,88 @@
+.icon {
+    align-self: default;
+}
+	
+
+.top-bar-nav {
+    background-color:$emz-brown;
+    font-size: 16px;
+    height: 35px;
+    opacity: 1;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+}
+
+    .icon.icon-EmzIcons.icon-EmzIcons-delivery {
+        width: 25px;
+        height: 18px;
+        margin-bottom: 8px;
+    }
+        @include media-breakpoint-up(sm) {
+            .custom-class {
+              display: block;
+            }
+          }
+        
+    .icon.icon-EmzIcons.icon-EmzIcons-trending {
+    width: 16px;
+    height: 22px;
+    margin-bottom: 8px;
+    }
+
+    .icon.icon-EmzIcons.icon-EmzIcons-info {
+    width: 19px;
+    height: 19px;
+    margin-bottom: 8px;
+    }
+
+    .icon.icon-EmzIcons.icon-EmzIcons-new {
+        width: 19px;
+        height: 19px;
+        margin-bottom: 8px;
+    }
+
+    .icon.icon-EmzIcons.icon-EmzIcons-phone {
+    width: 16px;
+    height: 16px;
+    margin-bottom: 8px;
+    }
+
+    .icon.icon-EmzIcons.icon-EmzIcons-service {
+        width: 19px;
+        height: 19px;
+        margin-bottom: 8px;
+    }
+.top-bar-text {
+    color: $emz-light-brown;
+    justify-content: space-around;
+}
+.text-decoration-none:hover {
+    text-decoration: underline;
+    border-bottom: 1px solid $emz-yellow;
+}
+.icon > svg path, .icon > svg use {
+    stroke: default;
+    fill-rule: nonzero !important;
+}
+
+
+.emz-top-bar-wrapper {
+    padding: .3rem 0;
+    background-color: $emz-brown;
+}
+.emz-top-bar {
+    font-size: .9375rem;
+    height: 1.5625rem;
+}
+.emz-top-bar-item {
+    display: flex;
+    align-items: center;
+    gap: 0 .625rem;
+
+    .btn {
+        font-size: .9375rem;
+    }
+}
+
+
+
